@@ -1,5 +1,8 @@
 const app=require("./src/app");
+const connectDB=require("./src/db/db");
+
+connectDB();
 
 app.listen(3000,()=>{
-    console.log("Serverst is start in prot number 3000");
+    console.log("Server connected on 3000 port")
 })
